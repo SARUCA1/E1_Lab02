@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace GenericsLab2
 {
-    interface ITeam
+    interface ITeam<T>
     {
+        T getTeam();
+        void CreateTeam(T value);
     }
 }
