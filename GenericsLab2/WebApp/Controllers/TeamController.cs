@@ -34,20 +34,20 @@ namespace WebApp.Controllers
         {
             try
             {
-                var response = TeamModel.Save(new TeamModel
-                {
-                    TeamName = "100 Thieves",
-                    PlayerName = "Milan",
-                    PlayerLastN = "Oleksij",
-                    Role = "Top Laner",
-                    KDA = 3,
-                    CreepScore = 191,
-                });
-                if(response)
-                {
-                    return RedirectToAction(nameof(Index));
-                }
-                ViewBag["Error"] = "Error while creating new element";
+                //var response = TeamModel.Save(new TeamModel
+                //{
+                //    TeamName = "100 Thieves",
+                //    PlayerName = "Milan",
+                //    PlayerLastN = "Oleksij",
+                //    Role = "Top Laner",
+                //    KDA = 3,
+                //    CreepScore = 191,
+                //});
+                //if(response)
+                //{
+                //    return RedirectToAction(nameof(Index));
+                //}
+                //ViewBag["Error"] = "Error while creating new element";
                 return View();
             }
             catch
